@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/enzoftware/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
+        <dex dex="/home/enzoftware/Projects/weatherapp/app/build/intermediates/pre-dexed/debug/annotations-13.0_e5f18774e6f4b211fd16f67b9e7367559d5574ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/enzoftware/.android/build-cache/0cc696d404beb61679c8803c76a583d1ed5dc49f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/home/enzoftware/Projects/weatherapp/app/build/intermediates/pre-dexed/debug/classes_2e9bbf49874dfef62bf3f2c953a081f660e584c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/enzoftware/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3-2/9b44c139a4ec57031e0c84ba0e49ba16df6d801c/kotlin-stdlib-1.1.3-2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9b44c139a4ec57031e0c84ba0e49ba16df6d801c">
+        <dex dex="/home/enzoftware/Projects/weatherapp/app/build/intermediates/pre-dexed/debug/kotlin-stdlib-1.1.3-2_ba0a74a29ed6c57d92a65329cd50c59ff45f5c07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/enzoftware/.gradle/caches/modules-2/files-2.1/org.jetbrains.anko/anko-common/0.8.2/8974e9997afe8701e4207a315d4aa9bf7f05a8f4/anko-common-0.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8974e9997afe8701e4207a315d4aa9bf7f05a8f4">
+        <dex dex="/home/enzoftware/Projects/weatherapp/app/build/intermediates/pre-dexed/debug/anko-common-0.8.2_ee7d5381b3c5bb941d3418ecc24052d32294d20d.jar" />
+    </item>
+
+</items>
