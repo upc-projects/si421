@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val forecastList = findViewById(R.id.forecast_list) as RecyclerView
         forecastList.layoutManager = LinearLayoutManager(this)
         forecastList.adapter = ForecastListAdapter(items)
+
     }
 }
 
@@ -26,6 +27,6 @@ private val items = listOf(
         "Wed 6/25 - Cloudy - 22/17",
         "Thurs 6/26 - Rainy - 18/11",
         "Fri 6/27 - Foggy - 21/10",
-        "Sat 6/28 - TRAPPED IN WEATHERSTATION - 23/18",
+        "Sat 6/28 - Cloudy - 23/18",
         "Sun 6/29 - Sunny - 20/7"
 )
