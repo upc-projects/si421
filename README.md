@@ -1,2 +1,8 @@
+<div align="center">
 # CodeFights Solutions
-#### My arcades solutions for codefights challenges
+<img src="http://joshalling.com/wp-content/uploads/2016/10/Codefights.png" />
+</div>
+
+---
+
+### My solutions for arcade , codefights challenges
