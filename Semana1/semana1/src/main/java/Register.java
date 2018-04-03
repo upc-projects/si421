@@ -1,6 +1,8 @@
 
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,8 +28,18 @@ public class Register extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		// SET CONTENT TYPE
+		response.setContentType("text/html");
+		
+		// GET PRINT WRITELINE
+		PrintWriter out = response.getWriter();
+		
+		// GENERATE HTML CONTENT
+		out.println("<html><body>");
+		out.println("Your email is "+ request.getParameter("email"));
+		out.println("</body></html>");
+		
+		
 	}
 
 	/**
@@ -36,6 +48,17 @@ public class Register extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+		
+		response.setContentType("text/html");
+		
+		// GET PRINT WRITELINE
+		PrintWriter out = response.getWriter();
+		out.println("<html><body>");
+		out.println("Your email is "+ request.getParameter("email"));
+		out.println("</body></html>");
+		
+		
+		
 	}
 
 }
