@@ -32,7 +32,6 @@ public class ImplCliente implements InterfaceCliente{
 			}
 			
 		} catch (Exception e) {
-			// TODO: handle exception
 			System.out.println(e.getMessage());
 		}
 		
