@@ -16,8 +16,8 @@ public class Autor{
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
-	private String nombre;
-	private String apellido;
+	private String nombres;  			
+	private String apellidos;			/* nombre de los atributos igual que en la base de datos */
 	private String nacionalidad;
 	
 	@ManyToMany(mappedBy="autores")
@@ -29,7 +29,7 @@ public class Autor{
 
 	@Override
 	public String toString() {
-		return "Autor [nombre=" + nombre + ", apellido=" + apellido + "]";
+		return "Autor [nombre=" + nombres + ", apellido=" + apellidos + "]";
 	}
 
 	public void setId(int id) {
@@ -37,19 +37,19 @@ public class Autor{
 	}
 
 	public String getNombre() {
-		return nombre;
+		return nombres;
 	}
 
 	public void setNombre(String nombre) {
-		this.nombre = nombre;
+		this.nombres = nombre;
 	}
 
 	public String getApellido() {
-		return apellido;
+		return apellidos;
 	}
 
 	public void setApellido(String apellido) {
-		this.apellido = apellido;
+		this.apellidos = apellido;
 	}
 
 	public String getNacionalidad() {
