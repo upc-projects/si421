@@ -6,23 +6,32 @@
   <packaging>war</packaging>
   <name>Practica Parcial</name>
   <dependencies> 
+  
   <dependency> 			
   <groupId>javax</groupId> 			
   <artifactId>javaee-api</artifactId> 			
   <version>7.0</version> 			
   <scope>provided</scope> 		
-  </dependency> 		
+  </dependency> 
+  		
   <dependency> 		   
    <groupId>mysql</groupId> 	
    <artifactId>mysql-connector-java</artifactId> 		    
    <version>5.1.38</version> 		
-   </dependency> 		
+   </dependency> 
+   		
    <dependency> 			
    <groupId>javax.servlet</groupId> 			
    <artifactId>jstl</artifactId> 			
    <version>1.2</version> 		
    </dependency>
-   <dependency>     <groupId>org.eclipse.persistence</groupId>     <artifactId>eclipselink</artifactId>     <version>2.5.1</version> </dependency>
+   
+   <dependency>     
+   <groupId>org.eclipse.persistence</groupId>     
+   <artifactId>eclipselink</artifactId>     
+   <version>2.5.1</version> 
+   </dependency>
+   
    <!-- GSON -->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>

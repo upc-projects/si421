@@ -17,6 +17,10 @@
 		<li> <a href="LibritoController"> listar libritos</a> </li>
 		<li> <a href="LibritoController?accion=agregar"> crear libritos</a> </li>
 		<li> <a href="LibritoController?accion=isbn">  libritos isbn </a> </li>
+		<h1> PROFESORES </h1>
+		<li> <a href="ProfesorController"> listar profes</a> </li>
+		<li> <a href="ProfesorController?accion=agregar"> crear profes</a> </li>
+		<li> <a href="ProfesorController?accion=codigo">  profes cod </a> </li>
 	</ul>
 </body>
 </html>
