@@ -2,8 +2,6 @@ package rest;
 
 import java.util.List;
 
-import javax.enterprise.inject.Produces;
-import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -64,6 +62,22 @@ public class LibritoRest {
 			return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(respuesta).build();
 		}
 		
+	}
+	
+	@GET
+	@Path("findisbn")
+	@javax.ws.rs.Produces(MediaType.APPLICATION_JSON)
+	//@Consumes(MediaType.APPLICATION_JSON)
+	public Response buscarisbn() {
+		String respuesta = "";
+		try {
+			Librito l = serviceLibrito.listarISBN("100");
+			respuesta = gson.toJson(l);
+			return Response.status(Response.Status.OK).entity(respuesta).build();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(respuesta).build();
+		}
 	}
 	
 	
