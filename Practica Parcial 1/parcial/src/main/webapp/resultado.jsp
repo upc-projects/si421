@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>resultado</h2>
-<% String msj = request.getParameter("mensaje"); %>
+<% String msj = (String) request.getAttribute("mensaje"); %>
 <%=msj %>
 </body>
 </html>

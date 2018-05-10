@@ -13,6 +13,10 @@
 		<li> <a href="autores?accion=agregar"> agregar autores </a> </li>
 		<li> <a href="libros"> listar libros</a> </li>
 		<li> <a href="libros?accion=agregar"> agregar libro </a> </li>
+		<h1>librito</h1>
+		<li> <a href="LibritoController"> listar libritos</a> </li>
+		<li> <a href="LibritoController?accion=agregar"> crear libritos</a> </li>
+		<li> <a href="LibritoController?accion=isbn">  libritos isbn </a> </li>
 	</ul>
 </body>
 </html>

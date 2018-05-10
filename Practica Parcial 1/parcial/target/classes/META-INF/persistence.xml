@@ -5,6 +5,7 @@
 		<class>entities.Editorial</class>
 		<class>entities.Genero</class>
 		<class>entities.Libro</class>
+		<class>entities.Librito</class>
 		<properties> 			
 		<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" /> 			
 		<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/libreriavirtual" /> 			
