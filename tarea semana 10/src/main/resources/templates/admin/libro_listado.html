@@ -47,6 +47,7 @@
 					<th>Precio</th>
 					<th>ISBN</th>
 					<th>Sinopsis</th>
+					<!--<th>Imagen</th>-->
 					<th>Opciones</th>
 				</tr>
 			</thead>
@@ -66,10 +67,11 @@
 					<td th:text="${libro.editorial.getNombre()}"></td>
 					<td th:text="${libro.precio}"></td>
 					<td th:text="${libro.isbn}"></td>
+					<!--<td th:text="${libro.imagen}"></td>-->
 					<td th:text="${libro.sinopsis}"></td>
 					<td>
-					<a th:href="@{'/admin/libro/eliminar/' + ${libro.id}}">eliminar</a>
-					<a th:href="@{'/admin/libro/editar/' + ${libro.id}}">editar</a>
+					<a th:href="@{'/admin/libro/eliminar/' + ${libro.id}}" class="btn btn-danger">eliminar</a>
+					<a th:href="@{'/admin/libro/editar/' + ${libro.id}}" class="btn btn-primary">editar</a>
 					</td>
 				</tr>
 			</tbody>

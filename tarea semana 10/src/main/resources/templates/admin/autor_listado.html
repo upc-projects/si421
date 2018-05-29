@@ -53,8 +53,8 @@
 					<td th:text="${autor.apellidos}"></td>
 					<td th:text="${autor.nacionalidad}"></td>
 					<td>
-					<a th:href="@{'/admin/autor/eliminar/' + ${autor.id}}">eliminar</a>
-					<a th:href="@{'/admin/autor/editar/' + ${autor.id}}">editar</a>
+					<a th:href="@{'/admin/autor/eliminar/' + ${autor.id}}" class="btn btn-danger">eliminar</a>
+					<a th:href="@{'/admin/autor/editar/' + ${autor.id}}" class="btn btn-primary" >editar</a>
 					</td>
 				</tr>
 			</tbody>
