@@ -34,6 +34,9 @@
           <h1 class="page-header">Nuevo libro</h1>
 
           <form method="post" th:object="${libro}" action="/admin/libro/guardar" enctype="multipart/form-data">
+
+              <input type="hidden" th:field="*{id}">
+
           	<div class="form-group">
               <label for="">Editorial</label>
               <select class="form-control" th:field="*{editorial}" >
@@ -63,8 +66,8 @@
               <input th:field="*{isbn}" type="text" class="form-control" id="campo03" placeholder="Ingrese ISBN" />
             </div>
             <div class="form-group">
-              <label for="">Sinopsis</label>
-              <textarea th:field="*{sinopsis}" class="form-control" rows="3"></textarea>
+              <label for="campo8">Sinopsis</label>
+              <textarea th:field="*{sinopsis}" class="form-control" rows="3" id="campo8"></textarea>
             </div>
             <div class="form-group">
 	              <label for="campo09">Autores</label>
@@ -82,7 +85,7 @@
 	        </div>
 	        <div class="form-group">
 	              <label for="campo10">Imagen</label>
-	              <input type="file" name="image">
+	              <input type="file" name="imagen" id="campo10">
 	             
 	        </div>
             <button type="submit" class="btn btn-default">Submit</button>

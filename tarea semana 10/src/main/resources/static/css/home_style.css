@@ -1,0 +1,19 @@
+body{
+    background: whitesmoke;
+    align-content: center;
+}
+
+.book{
+    max-height: 800px;
+    max-width: 450px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 4%;
+    padding: 1%;
+    animation-delay: 0.5s;
+}
+
+.book-img{
+    max-height: 430px !important;
+    max-width: 280px !important;
+}

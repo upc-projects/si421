@@ -111,5 +111,9 @@ public class Libro {
 
 	public void setImage(String image) {
 		this.imagen = image;
-	} 
+	}
+
+	public String getImageSrc(){
+		return imagen.substring(27, imagen.length());
+	}
 }

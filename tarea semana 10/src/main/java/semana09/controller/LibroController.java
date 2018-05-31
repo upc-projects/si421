@@ -51,10 +51,8 @@ public class LibroController {
 	
 	
 	@RequestMapping(value="/admin/libro/guardar", method=RequestMethod.POST)
-	public String guardar(@ModelAttribute @Valid Libro objLibro, Model model, BindingResult bindResult , 
+	public String guardar(@ModelAttribute @Valid Libro objLibro, BindingResult bindResult ,Model model,
 							RedirectAttributes ra , @RequestParam("imagen") MultipartFile file ){
-		
-		
 		if(bindResult.hasErrors()) {
 			
 			if(objLibro.getId() > 0) {
@@ -62,7 +60,6 @@ public class LibroController {
 			}else {
 				return "admin/libro_agregar";
 			}
-			
 		}else {
 			objLibro.setImage(FILE_ROUTE +  file.getOriginalFilename());
 			libroService.saveImage(file);
@@ -79,12 +76,8 @@ public class LibroController {
 				}			
 			}
 		}
-		
-		
 	}
-	
-	
-	
+
 	
 	@RequestMapping(value="/admin/libro/listado", method=RequestMethod.GET)
 	public String listar(Model model) {

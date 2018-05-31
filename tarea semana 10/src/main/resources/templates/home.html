@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+    <meta charset="ISO-8859-1">
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/home_style.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <title>Libreria Virtual - Lizama</title>
 </head>
 <body>
 
-<h2>Bienvenido</h2>
+    <div class="container">
 
+        <h1 class="animated bounceInUp">Libreria Librito </h1>
+
+        <div class="card book animated bounceInDown" th:each=" book : ${books}">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator book-img" th:src="${book.getImageSrc()}">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4" th:text="${book.titulo}"> <i class="material-icons right">more_vert</i></span>
+                 <p th:text="${book.autores.get(0).apellidos}"></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4" th:text="${book.titulo}"> <i class="material-icons right">close</i> </span>
+                <span th:text="${book.sinopsis}"></span>    <br>
+                <span th:text="${book.precio}"></span>      <br>
+                <span th:text="${book.isbn}"></span>        <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </body>
 </html>
