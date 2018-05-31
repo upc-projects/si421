@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 body{
     background: whitesmoke;
     align-content: center;
@@ -16,4 +17,11 @@ body{
 .book-img{
     max-height: 430px !important;
     max-width: 280px !important;
+}
+
+.title-app{
+    text-align: center;
+    font-family: 'Indie Flower', cursive !important;
+    size: 50px;
+    font-weight: bold;
 }
