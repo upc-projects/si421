@@ -17,6 +17,23 @@
 
         <div>
 
+            <div class="input-field col s12">
+                <select multiple >
+                    <option value="" disabled selected>Choose your option</option>
+                    <option th:each="autor : ${autors}" th:value="${autor.id}" th:text="${autor.apellidos}"></option>
+                </select>
+                <label>Filtro por autor</label>
+            </div>
+            <br>
+            <div class="input-field col s12">
+                <select multiple>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option th:each="gener : ${geners}" th:value="${gener.id}" th:text="${gener.nombre}"></option>
+                </select>
+                <label>Filtro por genero</label>
+            </div>
+            <br>
+            <a class="waves-effect waves-light btn-large"><i class="material-icons right">send</i>FILTRAR</a>
 
 
         </div>
@@ -33,12 +50,24 @@
                 <span class="card-title grey-text text-darken-4" th:text="${book.titulo}"> <i class="material-icons right">close</i> </span>
                 <span th:text="${book.sinopsis}"></span>    <br>
                 <span th:text="${book.precio}"></span>      <br>
-                <span th:text="${book.isbn}"></span>        <br>
+                <span th:text="${book.getImageSrc()}"></span>        <br>
             </div>
         </div>
     </div>
 
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <script>
+        //M.AutoInit();
+        var options = ['1','2','3'];
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
+    </script>
+
+
 </body>
 </html>

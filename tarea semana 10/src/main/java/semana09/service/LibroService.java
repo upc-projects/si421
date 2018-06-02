@@ -81,8 +81,7 @@ public class LibroService implements ILibroService {
 
 	@Override
 	public void saveImage(MultipartFile file) {
-		
-		
+
 		if (!file.isEmpty()) {
 			try {
 				byte[] bytes = file.getBytes();
