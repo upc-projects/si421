@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Source Final</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <form action="/empresa/agregar" method="post" th:object="${empresa}">
+        <h1>AGREGAR EMPRESAS</h1>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Nombre</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre empresa" th:field="*{nombre}">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Direccion</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="direccion" th:field="*{direccion}">
+        </div>
+
+        <div>
+            <h5>Tipo empresa </h5>
+            <div class="custom-control custom-radio form-group">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="Privada" th:field="*{tipo_empresa}">
+                <label class="custom-control-label" for="customRadio1">Privada</label>
+            </div>
+            <div class="custom-control custom-radio form-group">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="Publica" th:field="*{tipo_empresa}">
+                <label class="custom-control-label" for="customRadio2">Publica</label>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <select class="custom-select" th:field="*{rubro}">
+                <option th:each="rubr:${rubros}" th:text="${rubr.nombre}" th:value="${rubr.id}"></option>
+            </select>
+        </div>
+
+        <div class="custom-control custom-checkbox">
+            <h5>Tecnologias</h5>
+            <div  th:each="tech:${tecnologias}" >
+                <label><input type="checkbox" th:field="*{softwares}" th:text="${tech.nombre}" th:value="${tech.id}"></label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
