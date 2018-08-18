@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+  <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="container-fluid" th:fragment="menu_lateral">
+    	<div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-list">
+            <li class="nav-header">Autor</li>
+            <li><a href="/admin/autor/listado">Listar</a></li>
+            <li><a href="/admin/autor/agregar">Agregar</a></li>
+          </ul>
+          <ul class="nav nav-list">
+            <li class="nav-header">Libro</li>
+            <li><a href="/admin/libro/agregar">Agregar</a></li>
+            <li><a href="/admin/libro/listado">Listar</a></li>
+          </ul>
+        </div>    
+    </div>
+  </body>
+</html>
